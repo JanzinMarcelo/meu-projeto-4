@@ -1,4 +1,5 @@
 import TelaCadastroCliente from "./Telas/TelaCadastroCliente";
+import TelaCadastroFuncionario from "./Telas/TelaCadastroFuncionario";
 import TelaMenu from "./Telas/TelaMenu";
 import Tela404 from "./Telas/Tela404";
 import TelaLogin from "./Telas/TelaLogin";
@@ -21,6 +22,7 @@ function App() {
           <BrowserRouter>
             <Routes>
               <Route path="/cliente" element={<TelaCadastroCliente />} />
+              <Route path="/funcionario" element={<TelaCadastroFuncionario />} />
               <Route path="/" element={<TelaMenu />} />
               <Route path="*" element={<Tela404 />} />
             </Routes>
